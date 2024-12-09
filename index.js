@@ -1,11 +1,11 @@
 const express = require('express');
-const app = express();
+const index = express();
 const PORT = 3000;
 
-app.get('/', (req, res) => {
+index.get('/', (req, res) => {
     res.send('NodeJS Sample!');
 });
 
-app.listen(PORT, () => {
+index.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);
 });
